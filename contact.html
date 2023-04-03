@@ -4,74 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="contact page">
+    <meta description="home page">
     <title>Rainy Days Outdoor</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
+    <link rel="stylesheet" href="test1.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-ywnCNPTSvBYi+ZZOzLX5GuvZ10TK2t21e+aKjBAdIzTZwvczzfoNRLyKjZE1e1M9" crossorigin="anonymous">
+</head> 
+
 <body>
-    <header>
-        <img src="images/RainyDays_Logo.png" alt="Logo of the brand"/>
-        <nav>
-            <ul>
-                <li><a href="list_of_jackets.html">New in</a></li>
-                <li><a href="list_of_jackets.html">Women</a></li>
-                <li><a href="list_of_jackets.html">Men</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <nav class="left-nav">
+                <a href="list_of_jackets.html">New in</a>
+                <a href="list_of_jackets.html">Women</a>
+                <a href="list_of_jackets.html">Men</a>
+            </nav>
+            <img src="images/RainyDays_Logo.png" alt="Rainy Days Outdoor logo" class="center-logo">
+            <nav class="right-nav">
+                <a href="about_us.html">About us</a>
+                <a href="contact.html">Contact</a>
+                <div class="icons">
+                    <i class="fas fa-shopping-cart cart-icon"></i>
+                    <i class="fas fa-search search-icon"></i>
+                    <i class="fas fa-user profile-icon"></i>
+                </div>
+            </nav>
+        </header>  
+    </div>
     <main>
-        <img src="images/Tent picture.webp" alt="background picture">
-
-
-
-
-
-
-
-        
+        <h1>Pushing the comfort zone</h1>
+        <p>Whether you're hiking in the mountains, camping in the rain, or just running errands on a wet day, our waterproof jacket is the perfect choice for any outdoor activity. Order yours today and stay dry and comfortable in any weather.
+        </p>
+        <button class="register">Shop now</button>
     </main>
     <footer>
         <nav>
-            <div>
-                <ul>
-                    <li><a href="#">Service</a> 
-                    <li><a href="#">Shipping</a> 
-                    <li><a href="#">Returns</a> 
-                    <li><a href="#">Payments</a> 
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">Company</a> 
-                    <li><a href="#">About</a> 
-                    <li><a href="#">Carrier</a> 
-                    <li><a href="#">Press</a> 
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">Contact</a> 
-                    <li><a href="#">rainydays@gmail.com</a> 
-                    <li><a href="#">+47787488624</a> 
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">Follow Us</a>
-                </ul>
-                
-            </div>
-            <div>  
-                <ul>
-                    <li><a href="#">Newsletter</a> 
-                </ul>  
-            </div>
-            <div>
-                <p1>Sign Up</p1>
-            </div>    
+          <div class="nav-column">
+            <ul>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+          <div class="nav-column">
+            <ul>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+          <div class="nav-column">
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="mailto:rainydays@gmail.com">rainydays@gmail.com</a></li>
+              <li>+47787488624</li>
+            </ul>
+          </div>
+          <div class="nav-column">
+            <ul>
+              <li><a href="#">Follow Us</a></li>
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-pinterest"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+          </div>
         </nav>
-    </footer>    
+        <ul>
+            <li><a href="#">Newsletter</a></li>
+        </ul>
+        <button class="register">Sign up</button>
+        <div>
+            <ul>
+            <li><a href="#" class="fa fa-map-marker"></a>Oslo, Norway</li>
+            </ul>
+        </div>
+      </footer>
 </body>
+
 </html>

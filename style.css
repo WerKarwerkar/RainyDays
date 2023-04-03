@@ -1,12 +1,45 @@
+html {
+    height: 100px; 
+}
+
+body {
+    background-image: url(images/Canoe\ picture.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 img {
     RainyDays_Logo.png
-    position: absolute;
+    position: relative;
     width: 248px;
     height: 135px;
     left: 580px;
     top: 15px;
-    filter: invert(100%) brightness(100%);
 }
 header {
-    text-align: center
+    text-align: center;
+    height: 146px;
+    background-color:darkslategray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
 }
+.left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.left li {
+    display: inline-block;    
+}
+.left a {
+    text-decoration: none;
+    color: beige;
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    text-transform: capitalize;
+}
+
