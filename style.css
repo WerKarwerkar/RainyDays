@@ -1,45 +1,98 @@
-html {
-    height: 100px; 
+html, body {
+  margin: 0;
+  padding: 0;
 }
-
 body {
     background-image: url(images/Canoe\ picture.webp);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
-img {
-    RainyDays_Logo.png
-    position: relative;
-    width: 248px;
-    height: 135px;
-    left: 580px;
-    top: 15px;
-}
+
 header {
-    text-align: center;
-    height: 146px;
-    background-color:darkslategray;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1440px;
-}
-.left ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-.left li {
-    display: inline-block;    
-}
-.left a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: darkslategray;
+    min-height: 120px;
     text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .left-nav {
+    margin-right: auto;
     color: beige;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .right-nav {
+    margin-left: auto;
+  }
+
+  
+  .center-logo {
+    height: 120px;
+    width: auto;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon, .search-icon, .profile-icon {
+    margin-left: 20px;
+  }
+
+  main {
+    background-color: rgba(245, 245, 220, 0.464);
+    height: 300px;
+    margin-top: 100px;
+  }
+  h1 {
+    color: beige;
+    padding-left: 870px;
+    padding-top: 60px;
+    padding-right: 100px;
+    font-size: 35px;
+    font-family:'Jaldi', sans-serif;
+  }
+  p {
+    color: rgb(5, 35, 43);
+    padding-left: 830px;
+    padding-right: 70px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family:'Jaldi', sans-serif;
+  }
+  
+  footer {
+    background-color:  darkslategray;
+    height: 100px;
+    width: auto;
+    margin-top: 200px;
+ }
+
+  .shop.now {
+    position: absolute;
+    left: 710px;
+    top: 420px;
     width: 100px;
-    display: block;
-    padding: 25px 20px;
-    text-transform: capitalize;
+    height: 30px;
 }
+
+  .columns {
+    display: flex;
+    gap: 100px;
+    font-size: 16px;
+}
+
+  
+ 
+
+
+
 
