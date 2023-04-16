@@ -97,59 +97,12 @@ main {
   display: block;
 }
 
-.content-wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-  display: flex;
-  flex-direction: column; /* row - horizontally (lewo prawo); column - vertically (gora dol) */
-  align-items: center; /* flex-direction: row =  */
-  justify-content: center;
-}
-
-.content-wrapper h1 {
-  /*text-align: center;*/
-  font-family: 'JaldiBold';
-  font-size: 32px;
-}
-
-.content-wrapper p {
-  text-align: justify;
-  font-family: 'Jaldi';
-  font-size: 20px;
-}
-  .main {
-    background-color: rgba(165, 166, 145, 0.701);
-    flex-direction: row;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-  main h1 {
-    font-family: "Jaldi";
-    color: rgb(255, 255, 255);
-    text-align: center;
-  }
-  main p {
-    font-family: "Jaldi";
-    color: rgb(255, 255, 255);
-    text-align: justify;
-  }
 
 
 
-  .shopNow {
-    display: block;
-    background-color: rgb(113, 102, 87);
-    border: 2px solid rgb(51, 46, 38);
-    border-radius: 10px;
-    font-family: "Jaldi";
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    width: 100%;
 
-  }
 
+ 
 
 
 
