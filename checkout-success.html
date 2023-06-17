@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta description="Rainy Days is a clothing brand for people liking long, relaxing walks in the rain">
-  <title>Rainy Days Outdoor</title>
-  <link rel="stylesheet" href="styles/home-page.css"/>
+  <title>Rainy Days Outdoor - Success</title>
+  <link rel="stylesheet" href="styles/checkout-pages.css"/>
   <link rel="stylesheet" href="styles/styles.css"/>
   <link rel="stylesheet" href="styles/typography.css"/>
   <link rel="stylesheet" href="styles/buttons.css"/>
@@ -66,26 +66,124 @@
   </div>
 </header>
 
-<main class="home-page fill-height">
+<main class="checkout-success-page fill-height">
   <div class="container">
-    <div class="image">
-      <img src="assets/images/jacket-6.png" alt="Jacket image">
+    <div class="checkout-steps">
+      <div class="checkout-steps__step">
+        <div class="checkout-steps__step-number">
+          <span>1</span>
+        </div>
+        <h2 class="checkout-steps__step-title">
+          Shipping Data
+        </h2>
+      </div>
+
+      <div class="checkout-steps__line"></div>
+
+      <div class="checkout-steps__step">
+        <div class="checkout-steps__step-number">
+          <span>2</span>
+        </div>
+        <h2 class="checkout-steps__step-title">
+          Payment
+        </h2>
+      </div>
+
+      <div class="checkout-steps__line"></div>
+
+      <div class="checkout-steps__step checkout-steps__step--active">
+        <div class="checkout-steps__step-number">
+          <span>3</span>
+        </div>
+        <h1 class="checkout-steps__step-title">
+          Confirmation
+        </h1>
+      </div>
     </div>
 
-    <div class="content">
-      <h1 class="t100 content__heading">
-        Pushing The Comfort Zone
-      </h1>
+    <div class="success-wrapper">
+      <div class="thank-you">
+        <h1 class="t100">
+          Thank You for Your Purchase
+        </h1>
 
-      <p class="t600 content__text">
-        Whether you're hiking in the mountains, camping in the rain, or just running errands on a wet day, our
-        waterproof jacket is the perfect choice for any outdoor activity. Order yours today and stay dry and comfortable
-        in any weather.
-      </p>
+        <p class="t400">
+          You order number: #973266
+        </p>
 
-      <a href="single-product.html" class="button button--brown content__cta">
-        Shop Now
-      </a>
+        <p class="t400">
+          We'll email you an order confirmation and tracking info shortly
+        </p>
+
+        <a href="products.html" class="button button--big">
+          Continue Shopping
+        </a>
+      </div>
+
+      <div class="order-summary">
+        <table class="order-summary__table">
+          <thead>
+          <tr>
+            <th>
+              Product Name
+            </th>
+            <th>
+              Price
+            </th>
+            <th>
+              Qty
+            </th>
+            <th>
+              Subtotal
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              Rain Jacket
+            </td>
+            <td>
+              999 NOK
+            </td>
+            <td>
+              1
+            </td>
+            <td>
+              999 NOK
+            </td>
+          </tr>
+          <tr class="order-summary__total">
+            <td colspan="3" style="text-align: right">
+              Subtotal
+            </td>
+            <td>
+              999 NOK
+            </td>
+          </tr>
+          <tr class="order-summary__total">
+            <td colspan="3" style="text-align: right">
+              Shipping & Handling
+            </td>
+            <td>
+              150 NOK
+            </td>
+          </tr>
+          <tr class="order-summary__total">
+            <td colspan="3" style="text-align: right">
+              Total
+            </td>
+            <td>
+              1149 NOK
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <p class="t500 order-summary__date">
+          Ordered on:
+        </p>
+      </div>
     </div>
   </div>
 </main>

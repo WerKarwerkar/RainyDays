@@ -1,0 +1,45 @@
+.contact-page {
+  position: relative;
+  padding: 50px 0;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: url(../assets/images/about-us-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.contact-page .content-wrapper {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  color: #0A3641;
+  margin-left: auto;
+  width: 50%;
+}
+
+.content-part {
+  margin-bottom: 1.3em;
+}
+
+.content-part .t100 {
+  margin-bottom: 0.5em;
+}
+
+.content-part:last-child {
+  margin-bottom: 0;
+}
+
+.content-part p {
+  margin: 0;
+  line-height: 1.25em;
+  letter-spacing: 0.05em;
+}
+
+
+@media (max-width: 1024px) {
+  .contact-page .content-wrapper {
+    width: 100%;
+  }
+}

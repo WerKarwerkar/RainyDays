@@ -1,0 +1,41 @@
+.contact-page {
+  position: relative;
+  padding: 50px 0;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: url(../assets/images/contact-page-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.contact-page .container {
+  flex: 1;
+}
+
+
+.form-wrapper {
+  width: 50%;
+  max-width: 500px;
+  min-width: 350px;
+}
+
+.form-wrapper .button {
+  min-width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+
+.contact-page .form-wrapper .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .form-wrapper {
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+  }
+}

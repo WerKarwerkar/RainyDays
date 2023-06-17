@@ -1,0 +1,145 @@
+.checkout-page,
+.checkout-success-page {
+  position: relative;
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.checkout-page {
+  background-image: url(../assets/images/checkout-page-bg.jpg);
+}
+
+.checkout-success-page {
+  background-image: url(../assets/images/checkout-success-bg.jpg);
+}
+
+.shipping-form {
+  width: 50%;
+  margin-top: 60px;
+  max-width: 700px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shipping-form .form {
+  width: 100%;
+}
+
+.shipping-form .button {
+  min-width: 40%;
+  text-align: center;
+}
+
+.shipping-form__row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.shipping-form__row:last-child {
+  margin-bottom: 0;
+}
+
+.payment-gate {
+  width: 50%;
+  max-width: 700px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #0A3641;
+}
+
+.payment-gate .button {
+  margin-top: 30px;
+}
+
+.success-wrapper {
+  display: flex;
+  color: #0A3641;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.order-summary {
+  flex: 1;
+}
+
+.order-summary__table {
+  font-size: 22px;
+  width: 100%;
+  border-spacing: 0;
+  border: 2px solid #0A3641;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.order-summary__table th,
+.order-summary__table td {
+  padding: 8px;
+  text-align: center;
+}
+
+
+.order-summary__table th:first-child,
+.order-summary__table td:first-child {
+  text-align: left;
+}
+
+.order-summary__table th:last-child,
+.order-summary__table td:last-child {
+  text-align: right;
+}
+
+.order-summary__table th {
+  border-bottom: 2px solid #0A3641;
+}
+
+.order-summary__total {
+  background-color: rgba(118, 132, 121, 0.6);
+}
+
+.order-summary__total td {
+  padding: 0 8px;
+}
+
+.order-summary__date {
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .shipping-form {
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+  }
+
+  .success-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .shipping-form__row {
+    flex-direction: column;
+  }
+}
+
+

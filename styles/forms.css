@@ -1,0 +1,33 @@
+.form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-field__label {
+  font-size: 20px;
+  line-height: 1em;
+  color: #0A3641;
+}
+
+.form-field__input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #0A3641;
+  padding: 0 6px;
+  font-family: 'Jaldi', sans-serif;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+textarea.form-field__input {
+  line-height: 1.2em;
+  resize: vertical
+}

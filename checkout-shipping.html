@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta description="Rainy Days is a clothing brand for people liking long, relaxing walks in the rain">
-  <title>Rainy Days Outdoor</title>
-  <link rel="stylesheet" href="styles/home-page.css"/>
+  <title>Rainy Days Outdoor - Checkout</title>
+  <link rel="stylesheet" href="styles/checkout-pages.css"/>
   <link rel="stylesheet" href="styles/styles.css"/>
   <link rel="stylesheet" href="styles/typography.css"/>
+  <link rel="stylesheet" href="styles/forms.css"/>
   <link rel="stylesheet" href="styles/buttons.css"/>
 </head>
 
@@ -66,27 +67,113 @@
   </div>
 </header>
 
-<main class="home-page fill-height">
+<main class="checkout-page fill-height">
   <div class="container">
-    <div class="image">
-      <img src="assets/images/jacket-6.png" alt="Jacket image">
+    <div class="checkout-steps">
+      <div class="checkout-steps__step checkout-steps__step--active">
+        <div class="checkout-steps__step-number">
+          <span>1</span>
+        </div>
+        <h1 class="checkout-steps__step-title">
+          Shipping Data
+        </h1>
+      </div>
+
+      <div class="checkout-steps__line"></div>
+
+      <div class="checkout-steps__step">
+        <div class="checkout-steps__step-number">
+          <span>2</span>
+        </div>
+        <h2 class="checkout-steps__step-title">
+          Payment
+        </h2>
+      </div>
+
+      <div class="checkout-steps__line"></div>
+
+      <div class="checkout-steps__step">
+        <div class="checkout-steps__step-number">
+          <span>3</span>
+        </div>
+        <h2 class="checkout-steps__step-title">
+          Confirmation
+        </h2>
+      </div>
     </div>
 
-    <div class="content">
-      <h1 class="t100 content__heading">
-        Pushing The Comfort Zone
-      </h1>
+    <div class="shipping-form">
+      <form class="form">
+        <div class="shipping-form__row">
+          <label class="form-field">
+            <span class="form-field__label">
+              First Name
+            </span>
+            <input type="text" name="first-name" class="form-field__input">
+          </label>
 
-      <p class="t600 content__text">
-        Whether you're hiking in the mountains, camping in the rain, or just running errands on a wet day, our
-        waterproof jacket is the perfect choice for any outdoor activity. Order yours today and stay dry and comfortable
-        in any weather.
-      </p>
+          <label class="form-field">
+            <span class="form-field__label">
+              Last Name
+            </span>
+            <input type="text" name="last-name" class="form-field__input">
+          </label>
+        </div>
 
-      <a href="single-product.html" class="button button--brown content__cta">
-        Shop Now
+        <div class="shipping-form__row">
+          <label class="form-field">
+            <span class="form-field__label">
+              Phone Number
+            </span>
+            <input type="text" name="phone" class="form-field__input">
+          </label>
+
+          <label class="form-field">
+            <span class="form-field__label">
+              Email
+            </span>
+            <input type="email" name="email" class="form-field__input">
+          </label>
+        </div>
+
+        <div class="shipping-form__row">
+          <label class="form-field">
+            <span class="form-field__label">
+              Address
+            </span>
+            <input type="text" name="address" class="form-field__input">
+          </label>
+        </div>
+
+        <div class="shipping-form__row">
+          <label class="form-field">
+            <span class="form-field__label">
+              Post Code
+            </span>
+            <input type="text" name="post-code" class="form-field__input">
+          </label>
+
+          <label class="form-field">
+            <span class="form-field__label">
+              Country
+            </span>
+            <input type="text" name="Country" class="form-field__input">
+          </label>
+        </div>
+
+        <label class="form-field">
+        <span class="form-field__label">
+          Comment
+        </span>
+          <textarea name="comment" class="form-field__input" rows="3"></textarea>
+        </label>
+      </form>
+
+      <a href="checkout-payment.html" class="button button--transparent">
+        Submit
       </a>
     </div>
+
   </div>
 </main>
 

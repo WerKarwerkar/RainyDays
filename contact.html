@@ -1,116 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta description="home page">
-  <title>Rainy Days Outdoor</title>
-  <link rel="stylesheet" href="contact.css" />
-  <link rel="stylesheet href=" https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <meta description="Rainy Days is a clothing brand for people liking long, relaxing walks in the rain">
+  <title>Rainy Days Outdoor - Contact</title>
+  <link rel="stylesheet" href="styles/contact-page.css"/>
+  <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="styles/typography.css"/>
+  <link rel="stylesheet" href="styles/buttons.css"/>
+  <link rel="stylesheet" href="styles/forms.css"/>
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="container">
-      <header>
-        <nav class="left-nav">
-          <a href="list_of_jackets.html">New in</a>
-          <a href="list_of_jackets.html">Women</a>
-          <a href="list_of_jackets.html">Men</a>
-        </nav>
-        <nav class="center-logo">
-          <img src="images/RainyDays_Logo.png" alt="Rainy Days Outdoor logo" class="center-logo">
-        </nav>
-        <nav class="right-nav">
-          <a href="about_us.html">About us</a>
-          <a href="contact.html">Contact</a>
-          <div class="icons">
-            <i class="fa-solid fa-user"></i>
-            <i class="fas fa-search search-icon"></i>
-            <i class="fa-regular fa-basket-shopping-simple"></i>
-          </div>
-        </nav>
-      </header>
+<header class="site-header">
+  <div class="container">
+    <div class="site-header__left-column">
+      <a href="index.html">
+        <img src="assets/images/logo-rainy-days.png" alt="Rainy Days logo" class="top-nav__logo">
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav__item">
+            <a href="products.html">Products</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="about-us.html">About us</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <main>
-      <div class="contentwrapper">
-        <h1>
-          Send Us A Message
-        </h1>
-        <form class="contactForm">
-          <div class="input-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" required>
-          </div>
-          <div class="input-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" required>
-          </div>
-          <div class="input-group">
-            <label for="emil">Email</label>
-            <input type="text" id="email" required>
-          </div>
-          <div class="input-group">
-            <label for="ordernumber">Order Number</label>
-            <input type="text" id="ordernumber" required>
-          </div>
-          <div class="input-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="10"></textarea>
-          </div>
-        </form>
-        <div class="buttonwrapper">
-          <button class="submit" type="submit">Send it</button>
-        </div>
-      </div>
-  </main>
+
+    <div class="site-header__right-column">
+      <nav class="user-nav">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="assets/icons/icon-magnifying-glass.svg" alt="Magnifying glass icon" class="user-nav__icon">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/icons/icon-user.svg" alt="User icon" class="user-nav__icon">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/icons/icon-shopping-bag.svg" alt="Shopping bag icon" class="user-nav__icon">
+            </a>
+          </li>
+          <li class="mobile-nav-toggle">
+            <button class="mobile-nav-toggle__button">
+              <span class="line line--first"></span>
+              <span class="line line--second"></span>
+              <span class="line line--third"></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
-  <footer>
-    <nav class="columns">
-      <div class="nav-column">
+</header>
+
+<main class="contact-page fill-height">
+  <div class="container">
+    <h1 class="t100">
+      Send Us A Message
+    </h1>
+
+    <div class="form-wrapper">
+    <form class="form">
+      <label class="form-field">
+        <span class="form-field__label">
+          Subject
+        </span>
+        <input type="text" name="subject" class="form-field__input">
+      </label>
+
+      <label class="form-field">
+        <span class="form-field__label">
+          Name
+        </span>
+        <input type="text" name="name" class="form-field__input">
+      </label>
+
+      <label class="form-field">
+        <span class="form-field__label">
+          Email
+        </span>
+        <input type="email" name="email" class="form-field__input">
+      </label>
+
+      <label class="form-field">
+        <span class="form-field__label">
+          Order Number
+        </span>
+        <input type="text" name="order-number" class="form-field__input">
+      </label>
+
+      <label class="form-field">
+        <span class="form-field__label">
+          Message
+        </span>
+        <textarea name="order-number" class="form-field__input" rows="12"></textarea>
+      </label>
+    </form>
+
+    <button class="button button--transparent">
+      Submit
+    </button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__navs-wrapper">
+      <nav class="site-footer-nav">
+        <h6 class="t600">
+          Service
+        </h6>
+
         <ul>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Payments</a></li>
+          <li>
+            <a href="checkout-shipping.html" class="site-footer-link">
+              Shipping
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="site-footer-link">
+              Returns
+            </a>
+          </li>
+
+          <li>
+            <a href="checkout-payment.html" class="site-footer-link">
+              Payments
+            </a>
+          </li>
         </ul>
-      </div>
-      <div class="nav-column">
+      </nav>
+
+      <nav class="site-footer-nav">
+        <h6 class="t600">
+          Company
+        </h6>
+
         <ul>
-          <li><a href="#">Company</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Carrier</a></li>
-          <li><a href="#">Press</a></li>
+          <li>
+            <a href="about-us.html" class="site-footer-link">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="site-footer-link">
+              Returns
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="site-footer-link">
+              Carrier
+            </a>
+          </li>
         </ul>
-      </div>
-      <div class="nav-column contact">
+      </nav>
+
+      <nav class="site-footer-nav">
+        <h6 class="t600">
+          Contact
+        </h6>
+
         <ul>
-          <li><a href="#">Contact</a></li>
-          <li><a href="mailto:rainydays@gmail.com">rainydays@gmail.com</a></li>
-          <li><a phone number>+47787488624</a></li>
-          <li><a href="#">Follow Us</a></li>
+          <li>
+            <a href="mailto:rainydays@gmail.com" class="site-footer-link">
+              rainydays@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+47787488624" class="site-footer-link">
+              +47787488624
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="site-footer-link">
+              More
+            </a>
+          </li>
         </ul>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-pinterest"></a>
-        <a href="#" class="fa fa-instagram"></a>
-      </div>
-      <div class="newsletter">
-        <div>
-          <a href="#">Newsletter</a>
-          <button class="newsletterButton">Sign Up</button>
-        </div>
-      </div>
-      <div class="location">
-        <ul>
-          <li><a href="#" class="fa fa-map-marker">Oslo, Norway</a></li>
-        </ul>
-      </div>
-    </nav>
-  </footer>
+      </nav>
+    </div>
+
+    <div class="social-media">
+      <h6 class="t600">
+        Follow Us
+      </h6>
+
+      <ul>
+        <li>
+          <a href="https://instagram.com" target="_blank">
+            <img src="assets/icons/icon-logo-instagram.svg" alt="Instagram Logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            <img src="assets/icons/icon-logo-twitter.svg" alt="Twitter Logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com" target="_blank">
+            <img src="assets/icons/icon-logo-facebook.svg" alt="Facebook Logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://pinterest.com" target="_blank">
+            <img src="assets/icons/icon-logo-pinterest.svg" alt="Pinterest Logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 
 </html>

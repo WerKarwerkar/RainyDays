@@ -1,0 +1,118 @@
+.products-page {
+  position: relative;
+  padding: 50px 0;
+}
+
+.products-page h1 {
+  color: #eaeaea;
+  margin: 0 0 1.5em;
+}
+
+.products-page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/images/products-page-background.jpg) center center no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.products-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 80px 60px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-item a:not(.button) {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+}
+
+.product-item a:not(.button):hover {
+  transform: scale(1.1);
+}
+
+
+.product-item__category {
+  background: #D9D9D9;
+  opacity: 0.9;
+  border: 2px solid #0A3641;
+  border-radius: 40px;
+  padding: 8px 22px;
+  margin: 0 0 50px;
+  color: #0A3641;
+}
+
+.product-item__image {
+  width: 100%;
+  height: 260px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.product-item__details {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.25em;
+  gap: 8px;
+}
+
+.product-item__name,
+.product-item__price {
+  margin: 0;
+  padding: 0;
+}
+
+.product-item__name {
+  color: #eaeaea;
+}
+
+.product-item__price {
+  font-weight: 700;
+  background-color: #524a3b;
+  color: #eaeaea;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1440px) {
+  .products-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .products-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px 30px;
+  }
+}
