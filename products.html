@@ -10,310 +10,186 @@
   <link rel="stylesheet" href="styles/styles.css"/>
   <link rel="stylesheet" href="styles/typography.css"/>
   <link rel="stylesheet" href="styles/buttons.css"/>
-</head>
-
-<body>
-<header class="site-header">
-  <div class="container">
-    <div class="site-header__left-column">
-      <a href="index.html">
-        <img src="assets/images/logo-rainy-days.png" alt="Rainy Days logo" class="top-nav__logo">
-      </a>
-
-      <nav class="main-nav">
-        <ul>
-          <li class="main-nav__item">
-            <a href="products.html">Products</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="about-us.html">About us</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="site-header__right-column">
-      <nav class="user-nav">
-        <ul>
-          <li>
-            <a href="#">
-              <img src="assets/icons/icon-magnifying-glass.svg" alt="Magnifying glass icon" class="user-nav__icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="assets/icons/icon-user.svg" alt="User icon" class="user-nav__icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="assets/icons/icon-shopping-bag.svg" alt="Shopping bag icon" class="user-nav__icon">
-            </a>
-          </li>
-          <li class="mobile-nav-toggle">
-            <button class="mobile-nav-toggle__button">
-              <span class="line line--first"></span>
-              <span class="line line--second"></span>
-              <span class="line line--third"></span>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-
-<main class="products-page fill-height">
-  <div class="container">
-    <h1 class="t100">
-      Our Jackets
-    </h1>
-
-    <ul class="products-wrapper">
-      <li class="product-item">
-        <a href="single-product.html">
-          <h2 class="product-item__category t500">
-            Outdoor
-          </h2>
-
-          <div class="product-item__image">
-            <img src="assets/images/thumbs/jacket-1.png" alt="Jacket 1">
-          </div>
-
-          <div class="product-item__details">
-            <p class="product-item__name">
-              Rain jacket
-            </p>
-            <p class="product-item__price">
-              999 NOK
-            </p>
-          </div>
-
-          <a href="checkout-shipping.html" class="button">
-            ADD TO CART
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <!-- <link rel="stylesheet" href="style.css"/> -->
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__left-column">
+          <a href="index.html">
+            <img src="assets/images/logo-rainy-days.png" alt="Rainy Days logo" class="top-nav__logo">
           </a>
-        </a>
-      </li>
-
-      <li class="product-item">
-        <a href="single-product.html">
-          <h2 class="product-item__category t500">
-            Hiking
-          </h2>
-
-          <div class="product-item__image">
-            <img src="assets/images/thumbs/jacket-2.png" alt="Jacket 2">
+    
+          <nav class="main-nav">
+            <ul>
+              <li class="main-nav__item">
+                <a href="products.html">Products</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="about-us.html">About us</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    
+        <div class="site-header__right-column">
+          <nav class="user-nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="assets/icons/icon-magnifying-glass.svg" alt="Magnifying glass icon" class="user-nav__icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/icons/icon-user.svg" alt="User icon" class="user-nav__icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/icons/icon-shopping-bag.svg" alt="Shopping bag icon" class="user-nav__icon">
+                </a>
+              </li>
+              <li class="mobile-nav-toggle">
+                <button class="mobile-nav-toggle__button">
+                  <span class="line line--first"></span>
+                  <span class="line line--second"></span>
+                  <span class="line line--third"></span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+      <div class="JAVA">
+          <h1>Jackets</h1>
+  
+          <div id="results">
+              <div class="loader"></div>
           </div>
-
-          <div class="product-item__details">
-            <p class="product-item__name">
-              Rain jacket
-            </p>
-            <p class="product-item__price">
-              999 NOK
-            </p>
+      </div>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="site-footer__navs-wrapper">
+            <nav class="site-footer-nav">
+              <h6 class="t600">
+                Service
+              </h6>
+      
+              <ul>
+                <li>
+                  <a href="checkout-shipping.html" class="site-footer-link">
+                    Shipping
+                  </a>
+                </li>
+      
+                <li>
+                  <a href="contact.html" class="site-footer-link">
+                    Returns
+                  </a>
+                </li>
+      
+                <li>
+                  <a href="checkout-payment.html" class="site-footer-link">
+                    Payments
+                  </a>
+                </li>
+              </ul>
+            </nav>
+      
+            <nav class="site-footer-nav">
+              <h6 class="t600">
+                Company
+              </h6>
+      
+              <ul>
+                <li>
+                  <a href="about-us.html" class="site-footer-link">
+                    About
+                  </a>
+                </li>
+      
+                <li>
+                  <a href="contact.html" class="site-footer-link">
+                    Returns
+                  </a>
+                </li>
+      
+                <li>
+                  <a href="#" class="site-footer-link">
+                    Carrier
+                  </a>
+                </li>
+              </ul>
+            </nav>
+      
+            <nav class="site-footer-nav">
+              <h6 class="t600">
+                Contact
+              </h6>
+      
+              <ul>
+                <li>
+                  <a href="mailto:rainydays@gmail.com" class="site-footer-link">
+                    rainydays@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+47787488624" class="site-footer-link">
+                    +47787488624
+                  </a>
+                </li>
+                <li>
+                  <a href="contact.html" class="site-footer-link">
+                    More
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-
-          <a href="checkout-shipping.html" class="button">
-            ADD TO CART
-          </a>
-        </a>
-      </li>
-
-      <li class="product-item">
-        <a href="single-product.html">
-          <h2 class="product-item__category t500">
-            Skiing
-          </h2>
-
-          <div class="product-item__image">
-            <img src="assets/images/thumbs/jacket-3.png" alt="Jacket 3">
+      
+          <div class="social-media">
+            <h6 class="t600">
+              Follow Us
+            </h6>
+      
+            <ul>
+              <li>
+                <a href="https://instagram.com" target="_blank">
+                  <img src="assets/icons/icon-logo-instagram.svg" alt="Instagram Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank">
+                  <img src="assets/icons/icon-logo-twitter.svg" alt="Twitter Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://facebook.com" target="_blank">
+                  <img src="assets/icons/icon-logo-facebook.svg" alt="Facebook Logo">
+                </a>
+              </li>
+              <li>
+                <a href="https://pinterest.com" target="_blank">
+                  <img src="assets/icons/icon-logo-pinterest.svg" alt="Pinterest Logo">
+                </a>
+              </li>
+            </ul>
           </div>
-
-          <div class="product-item__details">
-            <p class="product-item__name">
-              Rain jacket
-            </p>
-            <p class="product-item__price">
-              999 NOK
-            </p>
-          </div>
-
-          <a href="checkout-shipping.html" class="button">
-            ADD TO CART
-          </a>
-        </a>
-      </li>
-
-      <li class="product-item">
-        <a href="single-product.html">
-          <h2 class="product-item__category t500">
-            Canoeing
-          </h2>
-
-          <div class="product-item__image">
-            <img src="assets/images/thumbs/jacket-4.png" alt="Jacket 4">
-          </div>
-
-          <div class="product-item__details">
-            <p class="product-item__name">
-              Rain jacket
-            </p>
-            <p class="product-item__price">
-              999 NOK
-            </p>
-          </div>
-
-          <a href="checkout-shipping.html" class="button">
-            ADD TO CART
-          </a>
-        </a>
-      </li>
-
-      <li class="product-item">
-        <a href="single-product.html">
-          <h2 class="product-item__category t500">
-            Camping
-          </h2>
-
-          <div class="product-item__image">
-            <img src="assets/images/thumbs/jacket-5.png" alt="Jacket 5">
-          </div>
-
-          <div class="product-item__details">
-            <p class="product-item__name">
-              Rain jacket
-            </p>
-            <p class="product-item__price">
-              999 NOK
-            </p>
-          </div>
-
-          <a href="checkout-shipping.html" class="button">
-            ADD TO CART
-          </a>
-        </a>
-      </li>
-    </ul>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="site-footer__navs-wrapper">
-      <nav class="site-footer-nav">
-        <h6 class="t600">
-          Service
-        </h6>
-
-        <ul>
-          <li>
-            <a href="checkout-shipping.html" class="site-footer-link">
-              Shipping
-            </a>
-          </li>
-
-          <li>
-            <a href="contact.html" class="site-footer-link">
-              Returns
-            </a>
-          </li>
-
-          <li>
-            <a href="checkout-payment.html" class="site-footer-link">
-              Payments
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav class="site-footer-nav">
-        <h6 class="t600">
-          Company
-        </h6>
-
-        <ul>
-          <li>
-            <a href="about-us.html" class="site-footer-link">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href="contact.html" class="site-footer-link">
-              Returns
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="site-footer-link">
-              Carrier
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav class="site-footer-nav">
-        <h6 class="t600">
-          Contact
-        </h6>
-
-        <ul>
-          <li>
-            <a href="mailto:rainydays@gmail.com" class="site-footer-link">
-              rainydays@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+47787488624" class="site-footer-link">
-              +47787488624
-            </a>
-          </li>
-          <li>
-            <a href="contact.html" class="site-footer-link">
-              More
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="social-media">
-      <h6 class="t600">
-        Follow Us
-      </h6>
-
-      <ul>
-        <li>
-          <a href="https://instagram.com" target="_blank">
-            <img src="assets/icons/icon-logo-instagram.svg" alt="Instagram Logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com" target="_blank">
-            <img src="assets/icons/icon-logo-twitter.svg" alt="Twitter Logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://facebook.com" target="_blank">
-            <img src="assets/icons/icon-logo-facebook.svg" alt="Facebook Logo">
-          </a>
-        </li>
-        <li>
-          <a href="https://pinterest.com" target="_blank">
-            <img src="assets/icons/icon-logo-pinterest.svg" alt="Pinterest Logo">
-          </a>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
-
-</html>
+      
+        </div>
+      </footer>
+  
+      <script src="js/script.js"></script>
+  </body>
+  </html>
