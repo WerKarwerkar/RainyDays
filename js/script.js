@@ -19,6 +19,7 @@ async function fetchJackets (){
                                     <h2>${jackets.title}</h1>
                                     <h4>${jackets.id}</h2>
                                     <h3>${jackets.gender}</h3>
+                                    <img src="${jackets.image}"></img>
                                     <p>${jackets.description}</p>
                                     </div>`;
 
