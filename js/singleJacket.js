@@ -30,7 +30,7 @@ async function fetchJackets (){
   fetchJackets();
 
   function createHtml(details) {
-    detailContainer.innerHTML = `<div class="card">
+    detailJackets.innerHTML = `<div class="card">
                                 <h2>${details.title}</h1>
                                 <h4>${details.id}</h2>
                                 <h3>${details.gender}</h3>
