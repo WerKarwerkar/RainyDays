@@ -15,13 +15,13 @@ async function fetchJackets (){
         const jackets = result[i];
 
 
-        detailContainer.innerHTML += `<div class="card">
+        detailContainer.innerHTML += `<a href="single-product.html?id=${jackets.id}" class="card">
                                     <h2>${jackets.title}</h1>
                                     <h4>${jackets.id}</h2>
                                     <h3>${jackets.gender}</h3>
-                                    <img src="${jackets.image}"></img>
+                                    <img src="${jackets.image}">${jackets.image}</img>
                                     <p>${jackets.description}</p>
-                                    </div>`;
+                                    </a>`;
 
 
   }} catch (error){
