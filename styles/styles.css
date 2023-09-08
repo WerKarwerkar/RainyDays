@@ -194,6 +194,28 @@ button:disabled {
   background-color: #05232B;
 }
 
+.loader {
+  border: 16px solid #eabdd1;
+  border-top: 16px solid rgb(194, 122, 134);
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  animation: spin 3s linear infinite;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
 @media (max-width: 1024px) {
   body {
     padding-top: 84px;

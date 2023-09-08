@@ -1,31 +1,41 @@
 const url = "https://api.noroff.dev/api/v1/rainy-days";
 const detailContainer = document.getElementById("results");
 
+function showError(message) {
+  const errorContainer = document.getElementById("results");
+  errorContainer.innerHTML = `<h2>Error: ${message}</h2>`;
+}
 
-async function fetchJackets (){
+async function fetchJackets() {
   try {
+    const loadingIndicator = document.getElementById("loading-indicator");
+    loadingIndicator.style.display = "block";
+
     const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error('Failed to fetch Jackets');
+    }
     const result = await response.json();
-    console.log(result);  
 
     detailContainer.innerHTML = "";
     const jackets = result;
 
     for (let i = 0; i < jackets.length; i++) {
-        const jackets = result[i];
+      const jacket = jackets[i];
 
-
-        detailContainer.innerHTML += `<a href="single-product.html?id=${jackets.id}" class="card">
-                                    <h2>${jackets.title}</h1>
-                                    <h4>${jackets.id}</h2>
-                                    <h3>${jackets.gender}</h3>
-                                    <img src="${jackets.image}">${jackets.image}</img>
-                                    <p>${jackets.description}</p>
+      detailContainer.innerHTML += `<a href="single-product.html?id=${jacket.id}" class="card">
+                                    <h2>${jacket.title}</h2>
+                                    <h4>${jacket.id}</h4>
+                                    <h3>${jacket.gender}</h3>
+                                    <img src="${jacket.image}" alt="${jacket.title}"/>
+                                    <p>${jacket.description}</p>
                                     </a>`;
+    }
 
+    loadingIndicator.style.display = "none";
+  } catch (error) {
+    showError(error.message); 
+  }
+}
 
-  }} catch (error){
-    console.log(error);
-  }}
-
-  fetchJackets();
+fetchJackets();
