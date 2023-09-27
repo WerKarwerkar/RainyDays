@@ -1,4 +1,4 @@
-.button {
+.button  {
   border-radius: 30px;
   padding: 6px 22px;
   text-decoration: none;
@@ -34,4 +34,17 @@
 
 .button--transparent:hover {
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.price-button {
+  display: block; 
+  padding: 6px 22px;
+  margin: 20px auto; 
+  color: #eaeaea;
+  font-family: 'Jaldi', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #0A3641;
+  border-radius: 30px;
+  border: none;
 }

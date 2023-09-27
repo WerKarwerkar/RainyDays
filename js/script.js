@@ -24,11 +24,10 @@ async function fetchJackets() {
       const jacket = jackets[i];
 
       detailContainer.innerHTML += `<a href="single-product.html?id=${jacket.id}" class="card">
-                                    <h2>${jacket.title}</h2>
-                                    <h4>${jacket.id}</h4>
-                                    <h3>${jacket.gender}</h3>
-                                    <img src="${jacket.image}" alt="${jacket.title}"/>
-                                    <p>${jacket.description}</p>
+                                    <h2 style="color: #0A3641; text-align: center;">${jacket.title}</h2>
+                                    <h3 style="color: #0A3641; text-align: center;">${jacket.gender}</h3>
+                                    <img src="${jacket.image}" alt="${jacket.title}" style="display: block; margin: 20px auto; width: 650px; height: 750px;"/>
+                                    <button class="price-button">${jacket.price}</button>                        
                                     </a>`;
     }
 
@@ -39,3 +38,5 @@ async function fetchJackets() {
 }
 
 fetchJackets();
+
+

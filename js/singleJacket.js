@@ -35,12 +35,13 @@ if (!id) {
 
   function createHtml(details) {
     detailJackets.innerHTML = `<div class="content">
-                              <h2>${details.title}</h1>
-                              <h4>${details.id}</h4>
-                              <h3>${details.gender}</h3>
-                              <img src="${details.image}" alt="${details.title}"/>
-                              <p>${details.description}</p>
-                               </div>`;
+                              <h2 style="color: #0A3641; text-align: center;">${details.title}</h2>
+                              <h3 style="color: #0A3641; text-align: center;">${details.gender}</h3>
+                              <img src="${details.image}" alt="${details.title}" style="display: block; margin: 0 auto; width: 650px; height: 750px;"/>
+                              <h4 style="color: #0A3641; text-align: center;">${details.description}</h4>
+                              <button class="price-button">${details.price}</button>
+                              </div>`;
     document.title = details.title;
   }
 }
+
