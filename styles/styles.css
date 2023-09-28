@@ -315,6 +315,10 @@ button:disabled {
   }
 }
 
+.card {
+  text-decoration: none;
+}
+
 @media (max-width: 600px) {
   .checkout-steps {
     flex-direction: column;

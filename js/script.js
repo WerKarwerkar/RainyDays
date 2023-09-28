@@ -24,9 +24,9 @@ async function fetchJackets() {
       const jacket = jackets[i];
 
       detailContainer.innerHTML += `<a href="single-product.html?id=${jacket.id}" class="card">
-                                    <h2 style="color: #0A3641; text-align: center;">${jacket.title}</h2>
-                                    <h3 style="color: #0A3641; text-align: center;">${jacket.gender}</h3>
+                                    <h2 style="color: #0A3641; text-align: center; text-decoration: none;">${jacket.title}</h2>
                                     <img src="${jacket.image}" alt="${jacket.title}" style="display: block; margin: 20px auto; width: 650px; height: 750px;"/>
+                                    <h4 style="color: #eaeaea; text-align: center;font-size: 22px;">${"Price"} ${jacket.price}</h4>
                                     <button class="price-button">${"Buy Now"}</button>                        
                                     </a>`;
     }

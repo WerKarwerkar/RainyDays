@@ -37,9 +37,11 @@
 }
 
 .price-button {
-  display: block; 
+  display: block;
+  text-decoration: none;
   padding: 6px 22px;
-  margin: 20px auto; 
+  max-width: fit-content;
+  margin: 15px auto; 
   color: #eaeaea;
   font-family: 'Jaldi', sans-serif;
   font-weight: 400;
