@@ -27,7 +27,7 @@ async function fetchJackets() {
                                     <h2 style="color: #0A3641; text-align: center;">${jacket.title}</h2>
                                     <h3 style="color: #0A3641; text-align: center;">${jacket.gender}</h3>
                                     <img src="${jacket.image}" alt="${jacket.title}" style="display: block; margin: 20px auto; width: 650px; height: 750px;"/>
-                                    <button class="price-button">${jacket.price}</button>                        
+                                    <button class="price-button">${"Buy Now"}</button>                        
                                     </a>`;
     }
 
