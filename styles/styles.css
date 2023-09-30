@@ -314,10 +314,54 @@ button:disabled {
     gap: 30px;
   }
 }
-
+/*interactive design */
+.Java h1 {
+  text-align: center;
+}
 .card {
   text-decoration: none;
 }
+
+.content  {
+  text-align: center;
+
+}
+
+.content h1, h5 {
+  color: #eaeaea; 
+}
+
+.content h2, h4 {
+  color: #0A3641; 
+}
+.content img {
+  display: block; 
+  margin: 0 auto; 
+  width: 650px; 
+  height: 750px;
+}
+
+.content h5 {
+  font-size: 22px;
+}
+
+.card h2 {
+  color: #0A3641;
+  text-align: center;
+  text-decoration: none;
+}
+.card img {
+  display: block; 
+  margin: 20px auto; 
+  width: 650px; 
+  height: 750px;
+}
+.card h3 {
+  color: #eaeaea; 
+  text-align: center;
+  font-size: 22px;
+}
+/*end of Interaction design*/
 
 @media (max-width: 600px) {
   .checkout-steps {
