@@ -337,8 +337,8 @@ button:disabled {
 .content img {
   display: block; 
   margin: 0 auto; 
-  width: 650px; 
-  height: 750px;
+  width: 600px; 
+  height: 600px;
 }
 
 .content h5 {
@@ -353,8 +353,8 @@ button:disabled {
 .card img {
   display: block; 
   margin: 20px auto; 
-  width: 650px; 
-  height: 750px;
+  width: 600px; 
+  height: 600px;
 }
 .card h3 {
   color: #eaeaea; 
