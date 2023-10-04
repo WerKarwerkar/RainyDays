@@ -34,7 +34,7 @@ if (!id) {
   }
 
   function createHtml(details) {
-    detailJackets.innerHTML = `<div class="contentTwo">
+    detailJackets.innerHTML = `<div class="contentJacket">
                               <h1>${details.gender}</h1>
                               <h2>${details.title}</h2>
                               <img src="${details.image}" alt="${details.title}" class="imgContent"/>

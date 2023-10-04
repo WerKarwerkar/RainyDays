@@ -215,6 +215,52 @@ button:disabled {
   }
 }
 
+/*interactive design */
+.Java h1 {
+  text-align: center;
+}
+.card {
+  text-decoration: none;
+}
+
+.contentJacket {
+  text-align: center;
+
+}
+
+.contentJacket h1, h5 {
+  color: #eaeaea; 
+}
+
+.contentJacket h2, h4 {
+  color: #0A3641; 
+}
+.contentJacket img {
+  display: block; 
+  margin: 0 auto; 
+  width: 600px; 
+  height: 600px;
+}
+
+.contentJacket h5 {
+  font-size: 22px;
+}
+
+.card h2 {
+  color: #0A3641;
+  text-align: center;
+  text-decoration: none;
+}
+.card img {
+  display: block; 
+  margin: 20px auto; 
+}
+.card h3 {
+  color: #eaeaea; 
+  text-align: center;
+  font-size: 22px;
+}
+/*end of Interaction design*/
 
 @media (max-width: 1024px) {
   body {
@@ -314,52 +360,6 @@ button:disabled {
     gap: 30px;
   }
 
-/*interactive design */
-.Java h1 {
-  text-align: center;
-}
-.card {
-  text-decoration: none;
-}
-
-.contentTwo  {
-  text-align: center;
-
-}
-
-.contentTwo h1, h5 {
-  color: #eaeaea; 
-}
-
-.contentTwo h2, h4 {
-  color: #0A3641; 
-}
-.contentTwo img {
-  display: block; 
-  margin: 0 auto; 
-  width: 600px; 
-  height: 600px;
-}
-
-.contentTwo h5 {
-  font-size: 22px;
-}
-
-.card h2 {
-  color: #0A3641;
-  text-align: center;
-  text-decoration: none;
-}
-.card img {
-  display: block; 
-  margin: 20px auto; 
-}
-.card h3 {
-  color: #eaeaea; 
-  text-align: center;
-  font-size: 22px;
-}
-/*end of Interaction design*/
 
 @media (max-width: 600px) {
   .imgMobile {
