@@ -319,6 +319,13 @@ button:disabled {
   margin: 0 auto;
   position: relative;
 }
+.image {
+  margin-bottom: 1em;
+  height: 290px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 /*interactive design */
 .Java h1 {
