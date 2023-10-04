@@ -314,6 +314,12 @@ button:disabled {
     gap: 30px;
   }
 }
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
 /*interactive design */
 .Java h1 {
   text-align: center;
@@ -322,26 +328,26 @@ button:disabled {
   text-decoration: none;
 }
 
-.content  {
+.contentTwo  {
   text-align: center;
 
 }
 
-.content h1, h5 {
+.contentTwo h1, h5 {
   color: #eaeaea; 
 }
 
-.content h2, h4 {
+.contentTwo h2, h4 {
   color: #0A3641; 
 }
-.content img {
+.contentTwo img {
   display: block; 
   margin: 0 auto; 
   width: 600px; 
   height: 600px;
 }
 
-.content h5 {
+.contentTwo h5 {
   font-size: 22px;
 }
 
@@ -353,8 +359,6 @@ button:disabled {
 .card img {
   display: block; 
   margin: 20px auto; 
-  width: 600px; 
-  height: 600px;
 }
 .card h3 {
   color: #eaeaea; 
@@ -364,6 +368,14 @@ button:disabled {
 /*end of Interaction design*/
 
 @media (max-width: 600px) {
+  .imgMobile {
+    max-width: 90vw;
+    max-height: auto;
+  }
+  .imgContent {
+    max-width: 90vw;
+    max-height: auto;
+  }
   .checkout-steps {
     flex-direction: column;
     align-items: flex-start;

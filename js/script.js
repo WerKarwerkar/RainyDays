@@ -25,7 +25,7 @@ async function fetchJackets() {
 
       detailContainer.innerHTML += `<a href="single-product.html?id=${jacket.id}" class="card">
                                     <h2>${jacket.title}</h2>
-                                    <img src="${jacket.image}" alt="${jacket.title}"/>
+                                    <img src="${jacket.image}" alt="${jacket.title}" class="imgMobile" />
                                     <h3>${"Price"} ${jacket.price}</h3>
                                     <button class="price-button">${"Buy Now"}</button>                        
                                     </a>`;

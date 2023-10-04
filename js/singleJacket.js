@@ -34,10 +34,10 @@ if (!id) {
   }
 
   function createHtml(details) {
-    detailJackets.innerHTML = `<div class="content">
+    detailJackets.innerHTML = `<div class="contentTwo">
                               <h1>${details.gender}</h1>
                               <h2>${details.title}</h2>
-                              <img src="${details.image}" alt="${details.title}"/>
+                              <img src="${details.image}" alt="${details.title}" class="imgContent"/>
                               <h4>${details.description}</h4>
                               <h5>${details.price}</h5>
                               <a href="checkout-shipping.html?id" class="price-button">${"Add to cart"}</a>
