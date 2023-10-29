@@ -7,7 +7,7 @@ const id = params.get("id");
 if (!id) {
   showError("Jacket ID is not found in the query string");
 } else {
-  url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
+  url = "https://www.weronkakarczmarczyk.no/wp-json/wc/store/products/" + id;
   loadingIndicator.style.display = "block";
 
   async function fetchJacket() {
@@ -35,11 +35,10 @@ if (!id) {
 
   function createHtml(details) {
     detailJackets.innerHTML = `<div class="contentJacket">
-                              <h1>${details.gender}</h1>
-                              <h2>${details.title}</h2>
-                              <img src="${details.image}" alt="${details.title}" class="imgContent"/>
-                              <h4>${details.description}</h4>
-                              <h5>${details.price}</h5>
+                              <h1>${details.name}</h1>
+                              <img src="${details.images[0].src}" alt="${details.name}" class="imgContent"/>
+                              <h2>${details.description}</h2>
+                              <h3>${details.prices.price} ${details.prices.currency_code}</h3>
                               <a href="checkout-shipping.html?id" class="price-button">${"Add to cart"}</a>
                               </div>`;
     document.title = details.title;

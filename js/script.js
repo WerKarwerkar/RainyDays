@@ -1,4 +1,4 @@
-const url = "https://api.noroff.dev/api/v1/rainy-days";
+const url = "https://www.weronkakarczmarczyk.no/wp-json/wc/store/products";
 const detailContainer = document.getElementById("results");
 
 function showError(message) {
@@ -24,9 +24,9 @@ async function fetchJackets() {
       const jacket = jackets[i];
 
       detailContainer.innerHTML += `<a href="single-product.html?id=${jacket.id}" class="card">
-                                    <h2>${jacket.title}</h2>
-                                    <img src="${jacket.image}" alt="${jacket.title}" class="imgMobile" />
-                                    <h3>${"Price"} ${jacket.price}</h3>
+                                    <h2>${jacket.name}</h2>
+                                    <img src="${jacket.images[0].src}" alt="${jacket.name}" class="imgMobile" />
+                                    <h3>${"Price"} ${jacket.prices.price} ${jacket.prices.currency_code}</h3>
                                     <button class="price-button">${"Buy Now"}</button>                        
                                     </a>`;
     }
