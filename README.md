@@ -3,12 +3,12 @@
 
 This project marks the initiation of my frontend development studies, serving as the inaugural project. It focuses on the creation of an online shop specializing in rain jackets.
 
-### Description
+## Description
 
 **Project Goal:**
 The primary objective is to develop a user-friendly online shop for rainy jackets with the following key features:
 
-#### Key Features:
+## Key Features:
 
 **Site Architecture:**
    - **Home:** Central hub providing an overview of the shop.
@@ -19,14 +19,17 @@ The primary objective is to develop a user-friendly online shop for rainy jacket
    - **About:** Offering insights into the background and mission of the online shop.
    - **Contact:** Providing a means for users to get in touch.
 
-#### Built With:
+## Built With:
 - HTML
 - CSS
 - JavaScript
 - WordPress (utilized as a Headless CMS)
 
-#### Repository:
+## Repository:
 
-Clone the repository using the following command:
-```bash
+Clone the repository:
 git clone git@github.com:WerKarwerkar/RainyDays.git
+
+## Contact
+
+werkar51641@stud.noroff.no
