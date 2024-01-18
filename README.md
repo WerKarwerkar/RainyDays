@@ -1,4 +1,6 @@
 # RainyDays
+![Screenshot 2024-01-18 at 16 24 10](https://github.com/WerKarwerkar/RainyDays/assets/126430261/c02c4ba9-4134-4a18-bcb4-97718aa203b0)
+
 ## Overview
 
 This project marks the initiation of my frontend development studies, serving as the inaugural project. It focuses on the creation of an online shop specializing in rain jackets.
